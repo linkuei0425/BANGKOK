@@ -75,7 +75,9 @@
             <!-- 美食推薦 (外連) -->
             <button onclick="window.open('https://linkuei0425.github.io/BANGKOK/food.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-orange-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(249,115,22,0.2)]"><i class="ph ph-fork-knife text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">美食推薦</span></button>
             <button onclick="window.open('https://linkuei0425.github.io/BANGKOK/shopping.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-rose-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(244,63,94,0.2)]"><i class="ph ph-handbag text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">購物推薦</span></button>
-            <button onclick="window.openModal('itineraryModal')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-pink-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(236,72,153,0.2)]"><i class="ph ph-calendar-check text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">行程表</span></button>
+            
+            <!-- 行程表 (外連) -->
+            <button onclick="window.open('https://linkuei0425.github.io/BANGKOK/S.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-pink-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(236,72,153,0.2)]"><i class="ph ph-calendar-check text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">行程表</span></button>
             
             <!-- 行程購買 (外連) -->
             <button onclick="window.open('https://linkuei0425.github.io/BANGKOK/TRIP.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-emerald-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(16,185,129,0.2)]"><i class="ph ph-ticket text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">行程購買</span></button>
@@ -276,25 +278,6 @@
                     <a id="attr-map-link" href="#" target="_blank" class="block w-full bg-blue-600 text-center py-3.5 rounded-xl font-bold shadow-lg mt-2">開啟GOOGLE導航</a>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- 行程表 Modal -->
-    <div id="itineraryModal" class="fixed inset-0 bg-teal-950 z-[80] hidden opacity-0 transition-opacity duration-300 flex flex-col max-w-[414px] mx-auto">
-        <div class="bg-itinerary-gradient text-white pt-10 pb-6 px-5 flex justify-between items-center shadow-md z-10"><h2 class="font-bold text-lg">完美行程表</h2><button onclick="window.closeModal('itineraryModal')"><i class="ph ph-x text-2xl"></i></button></div>
-        <div class="p-4 flex-1 overflow-y-auto bg-teal-950 no-scrollbar text-white">
-            <div class="flex gap-2 mb-5 overflow-x-auto no-scrollbar pb-1" id="itin-tabs-header">
-                <button onclick="window.renderItin('day1')" id="btn-itin-day1" class="itin-btn bg-teal-600 px-4 py-2 rounded-lg text-xs font-bold shadow-md shrink-0">Day 1：經典文化</button>
-                <button onclick="window.renderItin('day2')" id="btn-itin-day2" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">Day 2：潮流商圈</button>
-                <button onclick="window.renderItin('day3')" id="btn-itin-day3" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">Day 3：水上市場</button>
-                <button onclick="window.renderItin('day4')" id="btn-itin-day4" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">Day 4：文青市集</button>
-                <button onclick="window.renderItin('day5')" id="btn-itin-day5" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">Day 5：河畔藝術</button>
-                <button onclick="window.renderItin('ayutthaya')" id="btn-itin-ayutthaya" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">大城：歷史交匯</button>
-                <button onclick="window.renderItin('kanchanaburi')" id="btn-itin-kanchanaburi" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">北碧府：山林秘境</button>
-                <button onclick="window.renderItin('huahin')" id="btn-itin-huahin" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">華欣：慵懶海岸</button>
-                <button onclick="window.renderItin('pattaya')" id="btn-itin-pattaya" class="itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0">芭達雅：璀璨海景</button>
-            </div>
-            <div id="itin-list" class="space-y-5 pb-8 relative"></div>
         </div>
     </div>
 
@@ -965,55 +948,6 @@ const essData = {
     ]
 };
 
-// --- 全新更細緻的行程表資料 ---
-const itineraryData = {
-    day1: [
-        { time: "上午", act: "<span class='font-bold text-teal-300'>大皇宮 & 玉佛寺</span><br>泰國最神聖、最金碧輝煌的建築群。" },
-        { time: "下午", act: "<span class='font-bold text-teal-300'>臥佛寺 (Wat Pho) & 鄭王廟 (Wat Arun)</span><br>先到臥佛寺看壯觀的巨大金身臥佛，體驗正宗的泰式古法按摩放鬆一下。接著搭乘橘旗船橫渡湄南河，抵達純白色的「鄭王廟」。這裡非常適合租借一套傳統泰服（Chut Thai），拍出唯美的異國風情照。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>考山路 (Khao San Road)</span><br>背包客天堂！這裡充滿了隨性的街頭氛圍，找間有駐唱歌手的酒吧坐下，點杯 Mojito，享受現場 Live Band 演出的泰國流行音樂（Thai Pop），感受曼谷獨有的熱情節奏。" }
-    ],
-    day2: [
-        { time: "上午至下午", act: "<span class='font-bold text-teal-300'>Siam 商圈 (Siam Square, Siam Center, Siam Paragon)</span><br>這裡是曼谷流行文化的心臟。除了國際精品，Siam Center 內有非常多泰國本土設計師品牌（Thai Designers）。" },
-        { time: "傍晚", act: "<span class='font-bold text-teal-300'>四面佛 (Erawan Shrine) & CentralWorld</span><br>參拜香火鼎盛的四面佛後，漫步到對面的 CentralWorld 逛逛。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>Jodd Fairs 喬德夜市</span><br>曼谷目前最紅的潮流夜市，必吃火山排骨、水果冰沙。" }
-    ],
-    day3: [
-        { time: "上午", act: "<span class='font-bold text-teal-300'>丹嫩莎朵水上市場 (Damnoen Saduak)</span><br>搭乘手搖船穿梭在河道中，體驗在船上買烤肉串、吃米粉湯的傳統水上交易文化。" },
-        { time: "中午", act: "<span class='font-bold text-teal-300'>美功鐵道市場 (Maeklong Railway Market)</span><br>世界奇觀之一！攤販緊貼著鐵軌擺攤，當火車鳴笛進站時，攤商會在幾秒內俐落地收起遮陽棚與菜攤，非常刺激。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>安帕瓦水上市場 (Amphawa)</span><br>推薦傍晚搭船去看螢火蟲，享受寧靜的河畔微風。" }
-    ],
-    day4: [
-        { time: "上午至下午", act: "<span class='font-bold text-teal-300'>恰圖恰週末市集 / Ari 阿里區</span><br><b>(若逢週末) 恰圖恰週末市集：</b>這裡是全世界最大的週末市集，尋找貨源、挑選泰國特色商品的天堂。<br><br><b>(若逢平日) Ari (阿里區)：</b>曼谷著名的文青咖啡聚落，有許多充滿設計感的純白系咖啡廳與選物店（如 Gump's Ari 複合式空間），很適合尋找可愛的視覺靈感。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>The Commons Thonglor</span><br>這是一座以清水模和木質調打造的半露天垂直聚落，聚集了曼谷頂尖的精品咖啡、精釀啤酒與質感餐廳，充滿愜意的都會文青感。" }
-    ],
-    day5: [
-        { time: "上午", act: "<span class='font-bold text-teal-300'>曼谷河畔藝術中心 (River City Bangkok)</span><br>曼谷最重要的當代藝文與古董中心，經常舉辦各種免費的插畫展、攝影展與畫展，文藝氣息濃厚。" },
-        { time: "下午", act: "<span class='font-bold text-teal-300'>石龍軍路 (Charoen Krung Road) & Warehouse 30</span><br>曼谷最古老的道路之一，現在充滿了街頭塗鴉與老屋改建的藝廊。Warehouse 30 是由二戰時期舊倉庫改建的創意園區，裡面有獨立書店、古著店與特色咖啡廳。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>ICONSIAM 暹羅天地 & Asiatique 碼頭夜市</span><br>搭船前往 ICONSIAM 感受把整個「室內水上市場」搬進百貨公司的震撼；接著可前往 Asiatique 搭乘地標摩天輪，為旅程畫下完美句點。" }
-    ],
-    ayutthaya: [
-        { time: "上午", act: "<span class='font-bold text-teal-300'>邦芭茵夏宮 & 瑪哈泰寺</span><br>先前往融合了泰式、維多利亞與哥德式建築的邦芭茵夏宮，接著探訪瑪哈泰寺著名的「樹中佛頭」，感受寧靜的歷史氛圍。" },
-        { time: "下午", act: "<span class='font-bold text-teal-300'>柴瓦塔那蘭寺 & 傳統工藝村</span><br>換上泰服在柴瓦塔那蘭寺拍下絕美光影。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>大城夜市 (Ayutthaya Night Market)</span><br>品嚐道地的小吃，如船麵與泰式薄餅，結束豐富的一天。" }
-    ],
-    kanchanaburi: [
-        { time: "上午", act: "<span class='font-bold text-teal-300'>桂河大橋 & 死亡鐵路 / 北碧野生動物園</span><br><b>(行程 A)</b> 親自搭乘這段充滿歷史重量的復古火車。穿越時空的孤寂感與壯麗，是深度旅遊最完美的靈感素材。<br><br><b>(行程 B) 北碧野生動物園：</b>搭乘遊園吉普車，讓長頸鹿和斑馬直接把頭伸進車內與你互動！" },
-        { time: "下午", act: "<span class='font-bold text-teal-300'>茉莉之城 / 愛侶灣瀑布</span><br><b>(行程 A)</b> 茉莉之城是一座仿造拉瑪五世時期建造的復古城鎮，可換上古代泰服、使用古錢幣消費。<br><br><b>(行程 B)</b> 前往擁有七層不同景觀的石灰岩瀑布，湖水呈現夢幻的翠綠色，可與魚群游泳消暑。" },
-        { time: "傍晚", act: "<span class='font-bold text-teal-300'>Meena Cafe</span><br>在以田野和廟宇為背景的知名網美咖啡廳喝杯泰式奶茶，欣賞日落。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>入住桂河水上屋</span><br>如果安排二日遊，極度推薦入住直接建在河面上的水上屋（Floating Hotel），享受沒有網路、只有蟲鳴水聲的極致寧靜。" }
-    ],
-    huahin: [
-        { time: "Day 1 上午", act: "<span class='font-bold text-teal-300'>華欣火車站 & 拷汪宮 (Khao Wang)</span><br>華欣火車站紅白相間的木造建築與精緻雕花非常迷人，很適合作為手繪插畫素材。接著搭乘纜車登上拷汪宮，俯瞰城市的白牆紅瓦。" },
-        { time: "Day 1 下午至晚上", act: "<span class='font-bold text-teal-300'>海灘騎馬 & Cicada Market 週末創意市集</span><br>在平靜的華欣海灘體驗浪漫的騎馬散步。晚上前往 Cicada Market，這裡是泰國最具質感的文創市集之一，聚集大量獨立藝術家與原創手作。" },
-        { time: "Day 2", act: "<span class='font-bold text-teal-300'>三百峰國家公園 (帕亞那空山洞)</span><br>早起前往國家公園徒步進入巨大洞穴，接近中午時分，陽光從洞頂天然天窗精準灑落在泰王建立的金碧輝煌神龕上，畫面神聖且震撼。" }
-    ],
-    pattaya: [
-        { time: "上午", act: "<span class='font-bold text-teal-300'>真理寺 / 格蘭島 (Koh Larn) 跳島</span><br><b>(行程 A) 真理寺：</b>全木造龐大建築矗立海邊，每一寸都佈滿極度精緻的神話木雕。<br><br><b>(行程 B) 格蘭島：</b>體驗拖曳傘、海底漫步，或者租一台機車環島，找個隱秘的沙灘曬太陽。" },
-        { time: "下午", act: "<span class='font-bold text-teal-300'>海景咖啡廳 / Terminal 21 Pattaya</span><br><b>(行程 A)</b> 挑選一間擁有純白沙灘或懸崖景觀的絕美海景咖啡廳 (如 Cave Beach Club 或 The Oxygen)，點顆椰子慵懶吹海風。<br><br><b>(行程 B)</b> 前往 Terminal 21 Pattaya 航站百貨逛街。" },
-        { time: "晚上", act: "<span class='font-bold text-teal-300'>芭達雅步行街 / Tiffany's Show</span><br>感受泰國最生猛的霓虹夜生活與酒吧文化；或觀賞蒂芬妮人妖秀，體驗經典娛樂藝術。" }
-    ]
-};
-
 // --- 功能渲染邏輯 ---
 window.switchEssTab = t => {
     let isC = (t === 'checklist');
@@ -1021,12 +955,6 @@ window.switchEssTab = t => {
     document.getElementById('ess-goodies').classList.toggle('hidden', isC);
     document.getElementById('btn-ess-checklist').className = isC ? "flex-1 bg-violet-600 text-white py-2 rounded-lg text-sm font-bold" : "flex-1 bg-slate-800 text-slate-300 border border-slate-700 py-2 rounded-lg text-sm font-bold";
     document.getElementById('btn-ess-goodies').className = !isC ? "flex-1 bg-violet-600 text-white py-2 rounded-lg text-sm font-bold" : "flex-1 bg-slate-800 text-slate-300 border border-slate-700 py-2 rounded-lg text-sm font-bold";
-};
-
-window.renderItin = d => {
-    document.querySelectorAll('.itin-btn').forEach(t => t.className = "itin-btn bg-teal-900 border border-teal-700 px-4 py-2 rounded-lg text-xs text-teal-200 shrink-0");
-    document.getElementById('btn-itin-' + d).className = "itin-btn bg-teal-600 text-white font-bold px-4 py-2 rounded-lg text-xs shadow-md shrink-0";
-    document.getElementById('itin-list').innerHTML = '<div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-teal-800 border-l-2 border-dotted"></div>' + itineraryData[d].map((i, idx) => `<div class="relative pl-8 animate-[fadeIn_0.3s_ease-out]" style="animation-delay: ${idx * 0.05}s"><div class="absolute left-[7px] top-1 w-2.5 h-2.5 bg-teal-400 rounded-full shadow-[0_0_8px_rgba(45,212,191,0.8)]"></div><span class="text-[10px] text-teal-300 font-mono font-bold block mb-0.5">${i.time}</span><div class="bg-teal-900/40 p-3 rounded-xl border border-teal-800/50 text-sm text-white leading-relaxed">${i.act}</div></div>`).join('');
 };
 
 window.resetAttrView = () => { document.getElementById('attr-cat-grid').classList.remove('hidden'); document.getElementById('attr-detail-view').classList.add('hidden'); document.getElementById('attr-result').classList.add('hidden'); };
@@ -1271,8 +1199,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const eG = document.getElementById('ess-goodies');
     if(eG) eG.innerHTML = essData.good.map(i=>`<div class="flex items-start gap-3 bg-slate-800/80 p-3.5 rounded-xl border border-slate-700"><div class="w-10 h-10 rounded-full bg-violet-500/20 text-violet-400 flex flex-col justify-center items-center shrink-0"><i class="ph-fill ph-star"></i></div><div><p class="font-bold text-sm text-white">${i.n}</p><p class="text-[11px] text-slate-400">${i.d}</p></div></div>`).join('');
-
-    renderItin('day1');
 
     const aG = document.getElementById('attr-cat-grid');
     if(aG){
