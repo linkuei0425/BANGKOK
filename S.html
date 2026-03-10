@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇹🇭 泰國自由行 完美行程表</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'PingFang TC', 'Helvetica Neue', 'Microsoft JhengHei', sans-serif; background-color: #f3f4f6; }
+        .tab-active { border-bottom: 3px solid #f97316; color: #f97316; font-weight: bold; }
+        .tab-inactive { color: #6b7280; }
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        .card-enter { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 pb-20">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 py-4 text-center">
+            <h1 class="text-xl font-bold text-gray-900">🇹🇭 曼谷與近郊深度遊</h1>
+            <p class="text-xs text-gray-500 mt-1">曼谷 5日 • 華欣 • 大城 • 北碧府</p>
+        </div>
+        <!-- Tabs Navigation -->
+        <nav class="flex overflow-x-auto hide-scroll bg-white shadow-md">
+            <button onclick="switchTab('bangkok')" id="tab-bangkok" class="tab-active flex-1 min-w-[80px] py-3 text-sm text-center transition-colors duration-200">
+                <i class="fas fa-city block text-lg mb-1"></i>曼谷
+            </button>
+            <button onclick="switchTab('ayutthaya')" id="tab-ayutthaya" class="tab-inactive flex-1 min-w-[80px] py-3 text-sm text-center transition-colors duration-200">
+                <i class="fab fa-fort-awesome block text-lg mb-1"></i>大城
+            </button>
+            <button onclick="switchTab('kanchanaburi')" id="tab-kanchanaburi" class="tab-inactive flex-1 min-w-[80px] py-3 text-sm text-center transition-colors duration-200">
+                <i class="fas fa-leaf block text-lg mb-1"></i>北碧府
+            </button>
+            <button onclick="switchTab('huahin')" id="tab-huahin" class="tab-inactive flex-1 min-w-[80px] py-3 text-sm text-center transition-colors duration-200">
+                <i class="fas fa-umbrella-beach block text-lg mb-1"></i>華欣
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-3xl mx-auto px-4 py-6">
+
+        <!-- ==================== BANGKOK ==================== -->
+        <section id="content-bangkok" class="card-enter block">
+            
+            <!-- Day 1 -->
+            <div class="bg-white rounded-xl shadow-sm mb-6 overflow-hidden">
+                <div class="bg-blue-600 text-white px-4 py-2 font-bold text-lg">Day 1：抵達曼谷與現代繁華</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-blue-600 mb-1"><i class="fas fa-sun mr-1"></i> 白天</span>
+                        <p class="text-gray-700 leading-relaxed">抵達飯店放行李，前往 Siam 商圈或 Chit Lom 商圈（四面佛）感受曼谷的都會活力。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1233903&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F11626-bts-skytrain-rabbit-card-bangkok%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-ticket-alt mr-2"></i> BTS 兔子卡最方便,進出站不用排隊
+                        </a>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-sunset mr-1"></i> 傍晚</span>
+                        <p class="text-gray-700 leading-relaxed">IconSiam 暹羅天地。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-indigo-900 mb-1"><i class="fas fa-moon mr-1"></i> 夜晚</span>
+                        <p class="text-gray-700 leading-relaxed">Mahanakhon SkyWalk 拍攝曼谷璀璨的城市日落。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1233906&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F16870-king-power-mahanakhon-skywalk-ticket-bangkok%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-city mr-2"></i> 曼谷最高地標觀景台，飽覽360度無死角的曼谷市景
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="bg-white rounded-xl shadow-sm mb-6 overflow-hidden">
+                <div class="bg-blue-600 text-white px-4 py-2 font-bold text-lg">Day 2：舊城區文化與河岸風光</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-blue-600 mb-1"><i class="fas fa-sun mr-1"></i> 上午</span>
+                        <p class="text-gray-700 leading-relaxed">參觀 大皇宮與玉佛寺，接著前往 臥佛寺。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1233915&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F3021-bangkok-must-visit-landmarks-day-tour%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-vihara mr-2"></i> 曼谷寺廟之旅超方便
+                        </a>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-cloud-sun mr-1"></i> 下午</span>
+                        <p class="text-gray-700 leading-relaxed">前往對岸的 鄭王廟 (Wat Arun)。這裡的純白塔身與繁複雕花在午後陽光下極具立體感，是取景的絕佳地點。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-indigo-900 mb-1"><i class="fas fa-moon mr-1"></i> 夜晚</span>
+                        <p class="text-gray-700 leading-relaxed">安排昭披耶河遊船晚餐。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1232022&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F375-chao-phraya-princess-cruise-bangkok%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-ship mr-2"></i> 遊船看秀大啖日式、泰式等世界佳餚美饌
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="bg-white rounded-xl shadow-sm mb-6 overflow-hidden">
+                <div class="bg-blue-600 text-white px-4 py-2 font-bold text-lg">Day 3：經典市場動態捕捉</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-blue-600 mb-1"><i class="fas fa-coffee mr-1"></i> 清晨</span>
+                        <p class="text-gray-700 leading-relaxed">參加一日遊前往 丹能莎朵水上市場 (Damnoen Saduak)。搭乘手搖船穿梭在河道間，捕捉水上交易的生動畫面。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1231993&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F127327-damnoen-saduak-floating-market-maeklong-railway-market%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-bus mr-2"></i> 最安全方便的前往方式
+                        </a>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-sun mr-1"></i> 近午</span>
+                        <p class="text-gray-700 leading-relaxed">轉往 美功鐵道市場 (Maeklong Railway Market)。攤販在火車進站瞬間收起遮陽篷的縮時攝影或慢動作鏡頭，絕對是這趟旅程的視覺亮點。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-indigo-900 mb-1"><i class="fas fa-moon mr-1"></i> 晚上</span>
+                        <p class="text-gray-700 leading-relaxed">返回曼谷市區，前往唐人街 (Yaowarat) 品嚐燕窩、海鮮，拍攝霓虹燈下的熱鬧街景。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="bg-white rounded-xl shadow-sm mb-6 overflow-hidden">
+                <div class="bg-blue-600 text-white px-4 py-2 font-bold text-lg">Day 4：文創藝術與購物</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-blue-600 mb-1"><i class="fas fa-sun mr-1"></i> 白天</span>
+                        <p class="text-gray-700 leading-relaxed">若逢週末，首選 恰圖恰週末市集 (Chatuchak)；平日則可前往 BACC 曼谷藝術文化中心或 Emsphere 等最新商場探索設計選物。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-cloud-sun mr-1"></i> 下午</span>
+                        <p class="text-gray-700 leading-relaxed">找一間 Ari 區(隱身巷弄的「日系文青與慢生活」)或 Thong Lo 區(曼谷富人區的「精緻奢華與夜生活」)的特色咖啡廳休息。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-indigo-900 mb-1"><i class="fas fa-moon mr-1"></i> 晚上</span>
+                        <p class="text-gray-700 leading-relaxed">享受正宗的泰式古法按摩。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1233926&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F4014-health-land-spa-coupons-bangkok%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-spa mr-2"></i> CP值最高的SPA、泰式等世界佳餚美饌
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="bg-blue-600 text-white px-4 py-2 font-bold text-lg">Day 5：悠閒早晨與移動準備</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-blue-600 mb-1"><i class="fas fa-sun mr-1"></i> 上午</span>
+                        <p class="text-gray-700 leading-relaxed">參加半日的泰國菜廚藝教室，親自體驗並記錄料理過程。</p>
+                        <a href="https://www.klook.com/zh-TW/activity/3965-silom-thai-cooking-school-bangkok/?spm=SearchResult.SearchResult_LIST&clickId=da53f0cbee" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-utensils mr-2"></i> 在這裡學泰國菜，不用擔心燒掉廚房
+                        </a>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-cloud-sun mr-1"></i> 下午 (購物)</span>
+                        <p class="text-gray-700 leading-relaxed">到超市 (Big C 或 Gourmet Market) 採買伴手禮。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-bus-alt mr-1"></i> 下午 (觀光)</span>
+                        <p class="text-gray-700 leading-relaxed">曼谷美食觀光巴士，在泰國觀光巴士上米其林星級用餐體驗，乘坐雙層巴士遊覽拉達那哥欣島20多個景點。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1233927&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F27212-thai-food-sightseeing-bus-experience-bangkok%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-star mr-2"></i> 觀光巴士上米其林星級用餐體驗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==================== AYUTTHAYA ==================== -->
+        <section id="content-ayutthaya" class="card-enter hidden">
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="bg-amber-600 text-white px-4 py-2 font-bold text-lg">🏛️ 大城府 (Ayutthaya) 1 日遊</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-amber-600 mb-1"><i class="fas fa-sun mr-1"></i> 上午</span>
+                        <p class="text-gray-700 leading-relaxed">抵達大城，參觀 邦芭茵夏宮、崖差蒙空寺 (Wat Yai Chai Mongkhon)，欣賞保存相對完整的巨大臥佛與佛塔。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1231904&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F33742-ayuthaya-must-visit-temples-tour-bangkok%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-route mr-2"></i> 自己出發太耗時，曼谷輕鬆出發
+                        </a>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-cloud-sun mr-1"></i> 下午</span>
+                        <p class="text-gray-700 leading-relaxed">接著前往 柴瓦塔那蘭寺 (Wat Chaiwatthanaram)、聖骸寺。參觀 帕席桑碧寺 (Wat Phra Si Sanphet)，這是許多電影的取景地。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-indigo-900 mb-1"><i class="fas fa-moon mr-1"></i> 夜晚</span>
+                        <p class="text-gray-700 leading-relaxed">返回曼谷。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== KANCHANABURI ==================== -->
+        <section id="content-kanchanaburi" class="card-enter hidden">
+            <div class="mb-4 text-sm text-gray-600 flex items-center bg-green-50 p-3 rounded-lg">
+                <i class="fas fa-info-circle text-green-600 mr-2 text-lg"></i> 距離曼谷約 2.5 至 3 小時車程，以自然景觀和二戰歷史為主。
+            </div>
+            
+            <!-- 北碧府精華行程 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="bg-emerald-600 text-white px-4 py-2 font-bold text-lg">🌿 北碧府精華行程</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-emerald-600 mb-1"><i class="fas fa-sun mr-1"></i> 上午</span>
+                        <p class="text-gray-700 leading-relaxed">參觀 桂河大橋，接著搭乘一段 死亡鐵路 (Death Railway)，在懸崖峭壁與桂河交界處的木造高架橋路段，視覺張力十足。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-cloud-sun mr-1"></i> 下午</span>
+                        <p class="text-gray-700 leading-relaxed">前往 北碧府野生動物園 (Safari Park Kanchanaburi)。可以預約搭乘吉普車與長頸鹿近距離合照，能拍攝出非常有互動感的影像紀錄。</p>
+                        <a href="https://affiliate.klook.com/redirect?aid=114993&aff_adid=1233946&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Factivity%2F73965-kanchanaburi-safari-park-from-bangkok-by-ak-travel%2F" target="_blank" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white text-center py-2.5 px-4 rounded-lg text-sm font-semibold shadow-md transition-colors w-full flex justify-center items-center">
+                            <i class="fas fa-paw mr-2"></i> 近距離接觸長頸鹿、斑馬、駱駝和其他動物
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== HUA HIN ==================== -->
+        <section id="content-huahin" class="card-enter hidden">
+            <div class="mb-4 text-sm text-gray-600 flex items-center bg-cyan-50 p-3 rounded-lg">
+                <i class="fas fa-info-circle text-cyan-600 mr-2 text-lg"></i> 距離曼谷約 3 小時車程，是泰國皇室的避暑勝地，步調悠閒。
+            </div>
+
+            <!-- Day 1 -->
+            <div class="bg-white rounded-xl shadow-sm mb-6 overflow-hidden">
+                <div class="bg-cyan-600 text-white px-4 py-2 font-bold text-lg">Day 1：百年車站與夜市</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-cyan-600 mb-1"><i class="fas fa-cloud-sun mr-1"></i> 下午</span>
+                        <p class="text-gray-700 leading-relaxed">抵達華欣，參觀 華欣火車站。這座融合泰式與維多利亞風格的紅白木造建築，是非常經典的打卡地標。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-indigo-900 mb-1"><i class="fas fa-moon mr-1"></i> 晚上</span>
+                        <p class="text-gray-700 leading-relaxed">逛 華欣夜市 品嚐海鮮，若逢週末則強烈建議前往 Cicada 週末創意市集，欣賞手創藝術與現場音樂表演。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="bg-cyan-600 text-white px-4 py-2 font-bold text-lg">Day 2：神秘洞穴與海灘</div>
+                <div class="p-4 space-y-5">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-cyan-600 mb-1"><i class="fas fa-sun mr-1"></i> 上午</span>
+                        <p class="text-gray-700 leading-relaxed">前往三百峰國家公園內的 帕亞那空山洞 (Phraya Nakhon Cave)。早晨的陽光會從洞頂天窗灑落在洞內的金黃色涼亭上，是泰國最具神聖感的奇景之一。</p>
+                    </div>
+                    <div class="flex flex-col border-t pt-4 border-gray-100">
+                        <span class="text-sm font-bold text-orange-500 mb-1"><i class="fas fa-cloud-sun mr-1"></i> 下午</span>
+                        <p class="text-gray-700 leading-relaxed">在華欣海灘享受騎馬漫步，或挑選一間海景咖啡廳放空，隨後準備返程。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Simple Footer to ensure space at bottom -->
+    <footer class="text-center text-gray-400 text-xs py-6">
+        <p>Happy Travels in Thailand!</p>
+    </footer>
+
+    <!-- JavaScript for Tab Switching -->
+    <script>
+        function switchTab(tabName) {
+            // Arrays of all tabs and content sections
+            const tabs = ['bangkok', 'ayutthaya', 'kanchanaburi', 'huahin'];
+            
+            tabs.forEach(tab => {
+                // Update Button Styles
+                const btn = document.getElementById(`tab-${tab}`);
+                if (tab === tabName) {
+                    btn.classList.add('tab-active');
+                    btn.classList.remove('tab-inactive');
+                } else {
+                    btn.classList.add('tab-inactive');
+                    btn.classList.remove('tab-active');
+                }
+                
+                // Show/Hide Content
+                const content = document.getElementById(`content-${tab}`);
+                if (tab === tabName) {
+                    content.classList.remove('hidden');
+                    // Retrigger animation
+                    content.classList.remove('card-enter');
+                    void content.offsetWidth; // trigger reflow
+                    content.classList.add('card-enter');
+                } else {
+                    content.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
