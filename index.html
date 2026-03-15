@@ -48,13 +48,13 @@
     <!-- 照片輪播區 -->
     <div class="px-5 mt-4 relative overflow-hidden">
         <div id="carousel-track" class="carousel-track gap-3">
+            <div onclick="window.open('https://linkuei0425.github.io/BANGKOK/fe.html', '_blank')" class="shrink-0 w-[90%] h-44 relative rounded-2xl overflow-hidden shadow-lg border border-white/20 cursor-pointer active:scale-[0.98] transition-transform">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="節慶專區">
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3"><span class="text-white font-bold text-sm tracking-wide">節慶專區</span></div>
+            </div>
             <div class="shrink-0 w-[90%] h-44 relative rounded-2xl overflow-hidden shadow-lg border border-white/20">
                 <img src="https://i.imgur.com/N03fXCW.jpg" class="w-full h-full object-cover" alt="鄭王廟">
                 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3"><span class="text-white font-bold text-sm tracking-wide">絕美曼谷夕陽之旅</span></div>
-            </div>
-            <div class="shrink-0 w-[90%] h-44 relative rounded-2xl overflow-hidden shadow-lg border border-white/20">
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="美食">
-                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3"><span class="text-white font-bold text-sm tracking-wide">在地人的私藏口袋美食</span></div>
             </div>
             <div class="shrink-0 w-[90%] h-44 relative rounded-2xl overflow-hidden shadow-lg border border-white/20">
                 <img src="https://i.imgur.com/qSCqF9r.jpg" class="w-full h-full object-cover" alt="市集">
@@ -70,6 +70,14 @@
             <button onclick="window.openModal('airportModal')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-sky-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(14,165,233,0.2)]"><i class="ph ph-airplane-tilt text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">機場攻略</span></button>
             <button onclick="window.openModal('mapModal')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-teal-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(20,184,166,0.2)]"><i class="ph ph-train-regional text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">捷運規劃</span></button>
             <button onclick="window.openModal('boatModal')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(59,130,246,0.2)]"><i class="ph ph-boat text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">船運規劃</span></button>
+            
+            <!-- 新增：機票查詢 (外連) -->
+            <button onclick="window.open('https://hk.trip.com/flights/welcome/?to=home&Allianceid=7913725&SID=297495871&trip_sub1=&trip_sub3=D13946067', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-700 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(29,78,216,0.2)]"><i class="ph ph-airplane-takeoff text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">機票查詢</span></button>
+            
+            <!-- 新增：潑水節跨年專區 (外連) -->
+            <button onclick="window.open('https://linkuei0425.github.io/BANGKOK/fe.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-yellow-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(234,179,8,0.2)]"><i class="ph ph-confetti text-3xl"></i></div><span class="text-[10px] font-bold text-gray-700 text-center leading-[1.2]">潑水節<br>跨年專區</span></button>
+
+            <!-- 景點探索 -->
             <button onclick="window.openModal('attractionModal')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-purple-600 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(147,51,234,0.2)]"><i class="ph ph-camera text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">景點探索</span></button>
             
             <!-- 美食推薦 (外連) -->
@@ -86,7 +94,7 @@
             <button onclick="window.open('https://linkuei0425.github.io/BANGKOK/hotel.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-indigo-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(99,102,241,0.2)]"><i class="ph ph-bed text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">住宿推薦</span></button>
 
             <!-- Global Pass (外連) -->
-            <button onclick="window.open('https://linkuei0425.github.io/BANGKOK/go.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-600 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(37,99,235,0.2)]"><i class="ph ph-globe-hemisphere-west text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">Global Pass</span></button>
+            <button onclick="window.open('https://linkuei0425.github.io/togeter/go.html', '_blank')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-600 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(37,99,235,0.2)]"><i class="ph ph-globe-hemisphere-west text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">Global Pass</span></button>
             
             <button onclick="window.openModal('essentialsModal')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-violet-500 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(139,92,246,0.2)]"><i class="ph ph-suitcase text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">旅遊必備</span></button>
             <button onclick="window.openModal('aboutModal')" class="flex flex-col items-center gap-2 group"><div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-slate-600 group-active:scale-90 transition-transform shadow-[0_4px_10px_rgba(71,85,105,0.2)]"><i class="ph ph-info text-3xl"></i></div><span class="text-[11px] font-bold text-gray-700">關於我們</span></button>
@@ -667,7 +675,7 @@ const attractionsData = [
                 id: "m10", name: "CentralWorld", desc: "全泰國最大購物中心之一，好逛度極高。", hours: "10:00 - 22:00", transport: "1. BTS Chit Lom 站 1號/9號出口 經空橋直結<br>2. BTS Siam 站 6號出口 步行5分",
                 address: "999/9 Rama I Rd, Pathum Wan", mapUrl: "https://www.google.com/maps/search/?api=1&query=CentralWorld", img: "https://i.imgur.com/udDB48a.jpg",
                 tabs: [
-                    { id: 'm10_1', name: '品牌', items: [{ name: "Apple (國外品牌)", desc: "推薦產品：全泰最大蘋果旗艦店最新3C" }, { name: "Sephora (國外品牌)", desc: "推薦產品：歐美知名彩妝與獨家保養品牌" }, { name: "CPS Chaps (國內設計)", desc: "推薦產品：泰國個性搖滾風牛仔褲與男裝" }, { name: "Lyn Around (國內設計)", desc: "推薦產品：泰國夢幻繽紛馬卡龍色系少女服飾" }, { name: "Quinn (國內設計)", desc: "推薦產品：泰國高質感俐落都會女裝與西裝" }, { name: "LYN (國內設計)", desc: "推薦產品：泰國高CP值平價精品設計感包款" }, { name: "Dapper (國內設計)", desc: "推薦產品：泰國本土優質真皮皮件與商務鞋履" }] },
+                    { id: 'm10_1', name: '品牌', items: [{ name: "Apple (國外品牌)", desc: "推薦產品：全泰最大蘋果旗艦店最新3C" }, { name: "Sephora (國外品牌)", desc: "推薦產品：歐美知名彩妝與獨家保養品牌" }, { name: "CPS Chaps (國內設計)", desc: "推薦產品：泰國個性搖滾風牛仔褲與男裝" }, { name: "Lyn Around (國內設計)", desc: "推薦產品：泰國夢幻繽紛馬卡廊色系少女服飾" }, { name: "Quinn (國內設計)", desc: "推薦產品：泰國高質感俐落都會女裝與西裝" }, { name: "LYN (國內設計)", desc: "推薦產品：泰國高CP值平價精品設計感包款" }, { name: "Dapper (國內設計)", desc: "推薦產品：泰國本土優質真皮皮件與商務鞋履" }] },
                     { id: 'm10_2', name: '美食', items: [{ name: "Shake Shack (國外品牌)", desc: "推薦產品：紐約超人氣招牌起司漢堡與奶昔" }, { name: "Sushiro (國外品牌)", desc: "推薦產品：日本平價直送新鮮生魚片迴轉壽司" }, { name: "Thong Smith (國內設計)", desc: "推薦產品：泰國頂級和牛熬製濃郁黑湯船麵" }, { name: "Ros'niyom (國內設計)", desc: "推薦產品：泰國復古風質感街頭經典粿條麵食" }, { name: "Laem Charoen (國內設計)", desc: "推薦產品：泰國發明魚露炸鱸魚的創始海鮮名店" }, { name: "Hua Seng Hong (國內設計)", desc: "推薦產品：泰國老字號中泰融合砂鍋排翅與烤鴨" }, { name: "After You (國內設計)", desc: "推薦產品：泰國必吃招牌草莓起司蜜糖吐司" }] },
                     { id: 'm10_3', name: '伴手禮', items: [{ name: "Kinokuniya (國外品牌)", desc: "推薦產品：日本紀伊國屋獨家進口文具與零食" }, { name: "Zara Home (國外品牌)", desc: "推薦產品：西班牙快時尚品牌高質感居家香氛" }, { name: "Karmakamet (國內設計)", desc: "推薦產品：泰國超人氣質感天然精油與香氛蠟燭" }, { name: "NaRaYa曼谷包 (國內設計)", desc: "推薦產品：泰國必買平價實用大蝴蝶結布包" }, { name: "皇家計畫商店 (國內設計)", desc: "推薦產品：泰國皇家農場優質純牛乳片與蜂蜜" }, { name: "泰國鮮果乾 (國內設計)", desc: "推薦產品：泰國純天然無添加厚切芒果與椰子片" }, { name: "Madame Heng (國內設計)", desc: "推薦產品：泰國經典溫和草本阿婆手工香皂" }] }
                 ]
